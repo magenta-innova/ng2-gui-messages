@@ -69,5 +69,5 @@ $ npm run lint
 
 ## License
 
-MIT © [Octavio Garbarino](octavio.garbarino@magentainnova.com)
+MIT © [Octavio Garbarino](octaviogarbarino@gmail.com)
 "# ng2-gui-messages" 
