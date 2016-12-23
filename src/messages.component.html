@@ -1,0 +1,40 @@
+<div class="alert alert-dismissible alert-danger" *ngIf="chechErrorMessage()"><button class="close" type="button" (click)="hasErrorMessage = false; errorMessages=[]">&times;</button>
+    <ul *ngIf="getErrorMessages().length > 1">
+        <li *ngFor="let error of getErrorMessages()">
+            {{error}}
+        </li>
+    </ul>
+    <div *ngIf="getErrorMessages().length == 1">
+        {{getErrorMessages()}}
+    </div>
+</div>
+<div class="alert alert-dismissible alert-success" *ngIf="chechSuccessMessage()"><button class="close" type="button" (click)="hasSuccessMessage = false; successMessages=[]">&times;</  button>
+    <ul *ngIf="getSuccessMessages().length > 1">
+        <li *ngFor="let success of getSuccessMessages()">
+            {{success}}
+        </li>
+    </ul>
+    <div *ngIf="getSuccessMessages().length == 1">
+        {{getSuccessMessages()}}
+    </div>
+</div>
+<div class="alert alert-dismissible alert-warning" *ngIf="chechWarningMessage()"><button class="close" type="button" (click)="hasWarningMessage = false; warningMessages=[]">&times;</  button>
+    <ul *ngIf="getWarningMessages().length > 1">
+        <li *ngFor="let warning of getWarningMessages()">
+            {{warning}}
+        </li>
+    </ul>
+    <div *ngIf="getWarningMessages().length == 1">
+        {{getWarningMessages()}}
+    </div>
+</div>
+<div class="alert alert-dismissible alert-info" *ngIf="chechInfoMessage()"><button class="close" type="button" (click)="hasInfoMessage = false; infoMessages=[]">&times;</button>
+    <ul *ngIf="getInfoMessages().length > 1">
+        <li *ngFor="let info of getInfoMessages()">
+            {{info}}
+        </li>
+    </ul>
+    <div *ngIf="getInfoMessages().length == 1">
+        {{getInfoMessages()}}
+    </div>
+</div>
