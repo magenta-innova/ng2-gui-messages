@@ -17,7 +17,7 @@ export * from './src/message.service';
     MessagesComponent,
   ]
 })
-export default class MessageModule {
+export class MessageModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: MessageModule,
