@@ -6,12 +6,28 @@ import { MessageService} from './message.service';
     templateUrl: 'messages.component.html'
 })
 export class MessagesComponent {
+    
+    /**
+     * This is a doc comment for "someVar".
+     */
     @Input()
     errorClasses: String = "alert alert-dismissible alert-danger";
+
+    /**
+     * This is a doc comment for "someVar".
+     */
     @Input()
     successClasses: String = "alert alert-dismissible alert-success";
+
+    /**
+     * This is a doc comment for "someVar".
+     */
     @Input()
     warningClasses: String = "alert alert-dismissible alert-warning";
+
+    /**
+     * This is a doc comment for "someVar".
+     */
     @Input()
     infoClasses: String = "alert alert-dismissible alert-info";
 

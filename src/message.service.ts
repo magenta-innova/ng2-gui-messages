@@ -24,6 +24,10 @@ export class MessageService {
     constructor() {
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addErrorLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.errorLiveMessages.push(oneMessage);
@@ -31,6 +35,10 @@ export class MessageService {
         this.hasErrorLiveMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addErrorLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.errorLoadMessages.push(oneMessage);
@@ -38,6 +46,10 @@ export class MessageService {
         this.hasErrorLoadMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readErrorLiveMessages(){
         if (this.hasErrorLiveMessage) {
             let result = this.errorLiveMessages;
@@ -49,10 +61,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadErrorLiveMessages(){
         return this.hasErrorLiveMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readErrorLoadMessages(){
         if (this.hasErrorLoadMessage) {
             let result = this.errorLoadMessages;
@@ -64,10 +84,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadErrorLoadMessages(){
         return this.hasErrorLoadMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addSuccessLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.successLiveMessages.push(oneMessage);
@@ -75,6 +103,10 @@ export class MessageService {
         this.hasSuccessLiveMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addSuccessLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.successLoadMessages.push(oneMessage);
@@ -82,6 +114,10 @@ export class MessageService {
         this.hasSuccessLoadMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readSuccessLiveMessages(){
         if (this.hasSuccessLiveMessage) {
             let result = this.successLiveMessages;
@@ -93,10 +129,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadSuccessLiveMessages(){
         return this.hasSuccessLiveMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readSuccessLoadMessages(){
         if (this.hasSuccessLoadMessage) {
             let result = this.successLoadMessages;
@@ -108,10 +152,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadSuccessLoadMessages(){
         return this.hasSuccessLoadMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addWarningLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.warningLiveMessages.push(oneMessage);
@@ -119,6 +171,10 @@ export class MessageService {
         this.hasWarningLiveMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addWarningLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.warningLoadMessages.push(oneMessage);
@@ -126,6 +182,10 @@ export class MessageService {
         this.hasWarningLoadMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readWarningLiveMessages(){
         if (this.hasWarningLiveMessage) {
             let result = this.warningLiveMessages;
@@ -137,10 +197,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadWarningLiveMessages(){
         return this.hasWarningLiveMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readWarningLoadMessages(){
         if (this.hasWarningLoadMessage) {
             let result = this.warningLoadMessages;
@@ -152,10 +220,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadWarningLoadMessages(){
         return this.hasWarningLoadMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addInfoLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.infoLiveMessages.push(oneMessage);
@@ -163,6 +239,10 @@ export class MessageService {
         this.hasInfoLiveMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @param messages  Comment for parameter ´target´.
+     */
     addInfoLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
             this.infoLoadMessages.push(oneMessage);
@@ -170,6 +250,10 @@ export class MessageService {
         this.hasInfoLoadMessage = true;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readInfoLiveMessages(){
         if (this.hasInfoLiveMessage) {
             let result = this.infoLiveMessages;
@@ -181,10 +265,18 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadInfoLiveMessages(){
         return this.hasInfoLiveMessage;
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     readInfoLoadMessages(){
         if (this.hasInfoLoadMessage) {
             let result = this.infoLoadMessages;
@@ -196,6 +288,10 @@ export class MessageService {
         }
     }
 
+    /**
+     * Comment for method addErrorLiveMessage.
+     * @returns       Comment for return value.
+     */
     checkReadInfoLoadMessages(){
         return this.hasInfoLoadMessage;
     }
