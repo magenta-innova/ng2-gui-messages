@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MessageService} from './message.service';
 
 @Component({
@@ -6,6 +6,15 @@ import { MessageService} from './message.service';
     templateUrl: 'messages.component.html'
 })
 export class MessagesComponent {
+    @Input()
+    errorClasses: String = "alert alert-dismissible alert-danger";
+    @Input()
+    successClasses: String = "alert alert-dismissible alert-success";
+    @Input()
+    warningClasses: String = "alert alert-dismissible alert-warning";
+    @Input()
+    infoClasses: String = "alert alert-dismissible alert-info";
+
     private hasErrorMessage = false;
     private errorMessages: Array<string> = [];
 

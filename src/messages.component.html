@@ -1,4 +1,82 @@
-<div class="alert alert-dismissible alert-danger" *ngIf="chechErrorMessage()"><button class="close" type="button" (click)="hasErrorMessage = false; errorMessages=[]">&times;</button>
+<style type="text/css">
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  background-color: #b1e5df;
+  border-color: #d6e9c6;
+  color: #48a89d;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #e3234c;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #e3234c;
+}
+</style>
+
+<div class="{{errorClasses}}" *ngIf="chechErrorMessage()"><button class="close" type="button" (click)="hasErrorMessage = false; errorMessages=[]">&times;</button>
     <ul *ngIf="getErrorMessages().length > 1">
         <li *ngFor="let error of getErrorMessages()">
             {{error}}
@@ -8,7 +86,7 @@
         {{getErrorMessages()}}
     </div>
 </div>
-<div class="alert alert-dismissible alert-success" *ngIf="chechSuccessMessage()"><button class="close" type="button" (click)="hasSuccessMessage = false; successMessages=[]">&times;</  button>
+<div class="{{successClasses}}" *ngIf="chechSuccessMessage()"><button class="close" type="button" (click)="hasSuccessMessage = false; successMessages=[]">&times;</  button>
     <ul *ngIf="getSuccessMessages().length > 1">
         <li *ngFor="let success of getSuccessMessages()">
             {{success}}
@@ -18,7 +96,7 @@
         {{getSuccessMessages()}}
     </div>
 </div>
-<div class="alert alert-dismissible alert-warning" *ngIf="chechWarningMessage()"><button class="close" type="button" (click)="hasWarningMessage = false; warningMessages=[]">&times;</  button>
+<div class="{{warningClasses}}" *ngIf="chechWarningMessage()"><button class="close" type="button" (click)="hasWarningMessage = false; warningMessages=[]">&times;</  button>
     <ul *ngIf="getWarningMessages().length > 1">
         <li *ngFor="let warning of getWarningMessages()">
             {{warning}}
@@ -28,7 +106,7 @@
         {{getWarningMessages()}}
     </div>
 </div>
-<div class="alert alert-dismissible alert-info" *ngIf="chechInfoMessage()"><button class="close" type="button" (click)="hasInfoMessage = false; infoMessages=[]">&times;</button>
+<div class="{{infoClasses}}" *ngIf="chechInfoMessage()"><button class="close" type="button" (click)="hasInfoMessage = false; infoMessages=[]">&times;</button>
     <ul *ngIf="getInfoMessages().length > 1">
         <li *ngFor="let info of getInfoMessages()">
             {{info}}
