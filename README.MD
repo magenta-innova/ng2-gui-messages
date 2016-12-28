@@ -8,14 +8,6 @@ To install this library, run:
 $ npm install ng2-gui-messages --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ng2-gui-messages
-```
-
 and then from your Angular `AppModule`:
 
 ```typescript
@@ -24,8 +16,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ng2-gui-messages';
+// Import ng2-gui-messages library
+import { MessageModule, MessageService } from 'ng2-gui-messages';
 
 @NgModule({
   declarations: [
@@ -34,23 +26,24 @@ import { SampleModule } from 'ng2-gui-messages';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Specify ng2-gui-messages library module as an import
+    MessageModule
   ],
-  providers: [],
+  // Specify ng2-gui-messages library service as a provider
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the library is imported, you can use its components, directives and pipes in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use the library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<messages-component></messages-component>
 ```
 
 ## Development
