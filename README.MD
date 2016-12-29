@@ -104,7 +104,7 @@ export class AppModule {
     constructor(private router: Router, private messages: MessageService) {}
     ngOnInit() {
         //this message will be shown in current component.
-        this.messages.addSuccessLiveMessage(["ng2-gui-messages has been installed :)", "And you are useing it for first time!"]);
+        this.messages.addSuccessLiveMessage(["ng2-gui-messages has been installed :)", "And you are using it for first time!"]);
         //this message will be shown in the next component that use ng2-gui-messages component.
         this.messages.addSuccessLoadMessage(["This message was added in the example component!"]);
     }
@@ -121,7 +121,7 @@ export class AppModule {
     Example component
 </h1>
 <messages-component errorClasses="class1 class2"></messages-component>
-<p>Thanks for useing ng2-gui-messages library!</p>
+<p>Thanks for using ng2-gui-messages library!</p>
 ```
 
 ## Development
@@ -139,7 +139,7 @@ $ npm run lint
 ```
 Made with ❤️ by [Magenta Innova](http://www.magentainnova.com).
 
-If you use **ng2-gui-messages** in your Angular 2 app, we would love to hear about it! Drop us a line on [twitter].
+If you use **ng2-gui-messages** in your Angular 2 application, we would love to hear about it! Drop us a line on [twitter].
 
 ## Author
 * [Octavio Garbarino](https://github.com/octaviog) ([@OctavioGB19](https://twitter.com/OctavioGB19))
