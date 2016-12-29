@@ -1,6 +1,6 @@
 {
   "name": "ng2-gui-messages",
-  "version": "1.0.0-RC1",
+  "version": "1.0.0",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
@@ -35,7 +35,6 @@
     "@angular/core": "^2.0.0",
     "@angular/common": "^2.0.0",
     "codelyzer": "^0.0.28",
-    "rxjs": "5.0.0-beta.12",
     "tslint": "^3.15.1",
     "typescript": "2.0.2",
     "typings":"^1.0.4",

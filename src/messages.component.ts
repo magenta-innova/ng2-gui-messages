@@ -8,25 +8,25 @@ import { MessageService} from './message.service';
 export class MessagesComponent {
     
     /**
-     * This is a doc comment for "someVar".
+     * CSS classes used in error messages box, if no one is specified in the component declaration default ones will be used.
      */
     @Input()
     errorClasses: String = "alert alert-dismissible alert-danger";
 
     /**
-     * This is a doc comment for "someVar".
+     * CSS classes used in success messages box, if no one is specified in the component declaration default ones will be used.
      */
     @Input()
     successClasses: String = "alert alert-dismissible alert-success";
 
     /**
-     * This is a doc comment for "someVar".
+     * CSS classes used in warning messages box, if no one is specified in the component declaration default ones will be used.
      */
     @Input()
     warningClasses: String = "alert alert-dismissible alert-warning";
 
     /**
-     * This is a doc comment for "someVar".
+     * CSS classes used in info messages box, if no one is specified in the component declaration default ones will be used.
      */
     @Input()
     infoClasses: String = "alert alert-dismissible alert-info";

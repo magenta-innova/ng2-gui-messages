@@ -25,8 +25,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     * Method used to add error messages to the current page, previous error messages added in current page will be removed.
+     * @param messages  array of string containing each message e.g. ["error message 1", "error message 2"].
      */
     addErrorLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -36,8 +36,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     * Method used to add error messages to the next page to be routed.
+     * @param messages  array of string containing each message e.g. ["error message 1", "error message 2"].
      */
     addErrorLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -47,8 +47,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read new error messages, it clean them after read.
+     * @returns       array of error messages added in current page e.g. ["error message 1", "error message 2"].
      */
     readErrorLiveMessages(){
         if (this.hasErrorLiveMessage) {
@@ -62,16 +62,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if new error messages have been added in current page.
+     * @returns       boolean.
      */
     checkReadErrorLiveMessages(){
         return this.hasErrorLiveMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read error messages sent in previous page, it clean them after read.
+     * @returns       array of error messages added in previous page e.g. ["error message 1", "error message 2"].
      */
     readErrorLoadMessages(){
         if (this.hasErrorLoadMessage) {
@@ -85,16 +85,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if error messages have been added in previous page.
+     * @returns       boolean.
      */
     checkReadErrorLoadMessages(){
         return this.hasErrorLoadMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     * Method used to add success messages to the current page, previous success messages added in current page will be removed.
+     * @param messages  array of string containing each message e.g. ["success message 1", "success message 2"].
      */
     addSuccessLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -104,8 +104,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     Method used to add success messages to the next page to be routed.
+     * @param messages  array of string containing each message e.g. ["success message 1", "success message 2"].
      */
     addSuccessLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -115,8 +115,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read new success messages, it clean them after read.
+     * @returns       array of success messages added in current page e.g. ["success message 1", "success message 2"].
      */
     readSuccessLiveMessages(){
         if (this.hasSuccessLiveMessage) {
@@ -130,16 +130,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if new success messages have been added in current page.
+     * @returns       boolean.
      */
     checkReadSuccessLiveMessages(){
         return this.hasSuccessLiveMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read success messages sent in previous page, it clean them after read.
+     * @returns       array of success messages added in previous page e.g. ["success message 1", "success message 2"].
      */
     readSuccessLoadMessages(){
         if (this.hasSuccessLoadMessage) {
@@ -153,16 +153,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if success messages have been added in previous page.
+     * @returns       boolean.
      */
     checkReadSuccessLoadMessages(){
         return this.hasSuccessLoadMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     * Method used to add warning messages to the current page, previous warning messages added in current page will be removed.
+     * @param messages  array of string containing each message e.g. ["warning message 1", "warning message 2"].
      */
     addWarningLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -172,8 +172,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     Method used to add warning messages to the next page to be routed.
+     * @param messages  array of string containing each message e.g. ["warning message 1", "warning message 2"].
      */
     addWarningLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -183,8 +183,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read new warning messages, it clean them after read.
+     * @returns       array of warning messages added in current page e.g. ["warning message 1", "warning message 2"].
      */
     readWarningLiveMessages(){
         if (this.hasWarningLiveMessage) {
@@ -198,16 +198,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if new warning messages have been added in current page.
+     * @returns       boolean.
      */
     checkReadWarningLiveMessages(){
         return this.hasWarningLiveMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read warning messages sent in previous page, it clean them after read.
+     * @returns       array of warning messages added in previous page e.g. ["warning message 1", "warning message 2"].
      */
     readWarningLoadMessages(){
         if (this.hasWarningLoadMessage) {
@@ -221,16 +221,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if warning messages have been added in previous page.
+     * @returns       boolean.
      */
     checkReadWarningLoadMessages(){
         return this.hasWarningLoadMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     * Method used to add info messages to the current page, previous info messages added in current page will be removed.
+     * @param messages  array of string containing each message e.g. ["info message 1", "info message 2"].
      */
     addInfoLiveMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -240,8 +240,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @param messages  Comment for parameter ´target´.
+     Method used to add info messages to the next page to be routed.
+     * @param messages  array of string containing each message e.g. ["info message 1", "info message 2"].
      */
     addInfoLoadMessage(messages: Array<string>){
         messages.forEach((oneMessage) => {
@@ -251,8 +251,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read new info messages, it clean them after read.
+     * @returns       array of info messages added in current page e.g. ["info message 1", "info message 2"].
      */
     readInfoLiveMessages(){
         if (this.hasInfoLiveMessage) {
@@ -266,16 +266,16 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if new info messages have been added in current page.
+     * @returns       boolean.
      */
     checkReadInfoLiveMessages(){
         return this.hasInfoLiveMessage;
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to read info messages sent in previous page, it clean them after read.
+     * @returns       array of info messages added in previous page e.g. ["info message 1", "info message 2"].
      */
     readInfoLoadMessages(){
         if (this.hasInfoLoadMessage) {
@@ -289,8 +289,8 @@ export class MessageService {
     }
 
     /**
-     * Comment for method addErrorLiveMessage.
-     * @returns       Comment for return value.
+     * Method used by the component to check if info messages have been added in previous page.
+     * @returns       boolean.
      */
     checkReadInfoLoadMessages(){
         return this.hasInfoLoadMessage;
