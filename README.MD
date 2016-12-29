@@ -4,8 +4,8 @@
 * [Overview]
 * [Installation]
 * [Usage]
-  + [How to use the component]
-  + [How to use the service]
+  + [How to use the Component]
+  + [How to use the Service]
 * [Development]
 * [Author]
 * [License]
@@ -52,7 +52,7 @@ export class AppModule { }
 
 Once the library is imported, you can use its component and service. The component is the one who show the messages to the user, and the service is where the messages have to be added.
 
-### How to use the component
+### How to use the Component
 
 In each template that you want to show messages to the user, just add the ng2-gui-messages component and will handle it for you!
 
@@ -75,7 +75,7 @@ To use your custom CSS classes, declare the component in the template specifying
 </h1>
 <messages-component errorClasses="class1 class2" infoClasses="class3" warningClasses="class1 class4" successClasses="class1"></messages-component>
 ```
-### How to use the service
+### How to use the Service
 In your logic, whenever you need it, you will be able to add the messages to be showed to the user. In order to do this, you only have to call the propper method in the service. The service has 2 important methods that you will use for each message category, the parameter to them is an array of String that will have the messages to be showed in the component.
 
 addErrorLiveMessage(messages: Array<string>) -> will add messages in the current page error box 
@@ -138,6 +138,7 @@ To lint all `*.ts` files:
 $ npm run lint
 ```
 Made with ❤️ by [Magenta Innova](http://www.magentainnova.com).
+
 If you use **ng2-gui-messages** in your Angular 2 app, we would love to hear about it! Drop us a line on [twitter].
 
 ## Author
