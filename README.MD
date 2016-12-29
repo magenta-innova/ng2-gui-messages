@@ -148,5 +148,15 @@ If you use **ng2-gui-messages** in your Angular 2 app, we would love to hear abo
 MIT © [Magenta Innova](https://github.com/magenta-innova)
 "# ng2-gui-messages" 
 
+<!--- In file -->
+[Overview]: #overview
+[Installation]: #installation
+[Usage]: #usage
+[How to use the Component]: #how-to-use-the-component
+[How to use the Service]: #how-to-use-the-service
+[Development]: #development
+[Author]: #author
+[License]: #license
+
 <!--- External -->
 [twitter]: https://twitter.com/magentainnova
