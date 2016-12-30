@@ -1,6 +1,7 @@
 {
   "name": "ng2-gui-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Feedback messages manager for Angular 2",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",

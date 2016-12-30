@@ -11,7 +11,7 @@
 * [License]
 
 ## Overview
-ng2-gui-messages is an Angular 2 library for managing the feedback messages to the user that will save your day. It can handle 4 different categories of messages in separate boxes: Success, Error, Warning and Info, and has the ability to display them in the current page or in the next one to be routed.
+ng2-gui-messages is an Angular 2 library for managing feedback messages to the user that will save your day. It can handle 4 different categories of messages in separate boxes: Success, Error, Warning and Info, and has the ability to display them in the current page or in the next one to be routed.
 
 ## Installation
 
